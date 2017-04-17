@@ -1,0 +1,97 @@
+$color_ended: #ddd;
+
+@media screen and (max-width: 1000px){
+  thead{
+    display: none;
+  }
+  .table td{
+    display: block;
+    padding-left: 40%;
+    border: none;
+    min-height: 14px;
+  }
+  .table td:nth-child(odd){
+    background-color: #ccc;
+  }
+  .table td:before{
+    content: attr(data-label);
+    position: absolute;
+    left: 3%;
+  }
+  .table tr{
+    border-bottom: 3px dotted #111;
+  }
+}
+@media screen and (max-width: 420px){
+  .lector__popup{
+    margin-left: 15px;
+    width: 220px;
+  }
+}
+@media screen and (max-width: 600px){
+  .table td:before{
+    position: static;
+    display: block;
+    background-color: #ccc;
+    font-weight: bold;
+    padding: 10px;
+  }
+  .table td{
+    padding: 0;
+    text-align: center;
+  }
+  .table td span{
+    padding: 10px;
+    display: inline-block;
+  }
+  .table td:nth-child(odd){
+    background-color: #fff;
+  }
+  .table .lecture__ended td:nth-child(odd){
+    background-color: $color_ended;
+  }
+  .plagin__container {
+    .form {
+      select {
+        display: block;
+        width: 100%;
+      }
+      .date__rows-title{
+        display: block;
+        margin: 10px 0;
+      }
+      .btn {
+        width: 100%;
+      }
+    }
+    .plagin__body{
+      .align{
+        width: auto;
+        select, input{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+
+  /**form**/
+  form {
+    .input {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+      margin: 0;
+    }
+    .filter__input{
+      display: inline-block;
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
+    .filter__input:nth-child(even){
+      margin: 0 15px;
+    }
+  }
+}

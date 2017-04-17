@@ -1,0 +1,17 @@
+$color_ended: #ddd;
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+  .lecture__ended{
+    background-color: $color_ended;
+  }
+}
+.table td, .table th{
+  padding: 7px;
+  border: 1px solid #000;
+}
+.table td{
+  position: relative;
+}
